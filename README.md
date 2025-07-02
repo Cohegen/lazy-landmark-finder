@@ -1,4 +1,5 @@
-# lazy-landmark-finder
+# Lazy Landmark Finder
+
 Lazy Landmark Finder is a deep learning project that recognizes Egyptian landmarks from images, even when the images are low-quality, blurry, or taken from unusual angles. The project demonstrates a full machine learning workflow: dataset preparation, model training, inference, and web deployment.
 
 ---
@@ -26,24 +27,19 @@ This project aims to make landmark recognition robust to "lazy" (imperfect) phot
 ## 📁 Project Structure
 ```
 lazy_landmark_finder/
-├── data/                  # Raw and external data (not tracked by git)
-│   └── egypt_landmarks/
-│       └── images/
-├── dataset/               # Processed dataset (top 20 landmarks, auto-generated)
-├── models/                # Saved model weights
-│   └── lazy_landmark_model_best.pth
-├── src/                   # All source code
+├── src/                   # All source code (Python scripts)
 │   ├── gldv2_subset.py    # Dataset selection/copy script
 │   ├── train.py           # Model training script
 │   ├── infer.py           # Single image inference script
 │   └── app.py             # Streamlit web app
-├── notebooks/             # Jupyter notebooks for experiments
-│   └── Landmark_Recognition_Workflow.ipynb
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project overview and instructions
 ├── .gitignore             # Files/folders to ignore in git
 └── LICENSE                # Open-source license
 ```
+
+**Note:**
+- The `data/`, `dataset/`, `models/`, and `notebooks/` directories are not included in the repository due to size constraints. Please follow the instructions in the README to download or generate these files locally.
 
 ---
 
@@ -118,5 +114,19 @@ lazy_landmark_finder/
 - Web app: Streamlit
 
 ---
+
+## ⬇️ Download Data and Models
+
+To keep this repository lightweight, data and model files are not included. Please download them separately:
+
+- **Egyptian Landmarks Dataset:**
+  - Download from [Kaggle/egypt landmarks] or your preferred source.
+  - Place the images in `data/egypt_landmarks/images/`.
+
+- **Trained Model Weights:**
+ 
+  - Place the file in the `models/` directory as `lazy_landmark_model_best.pth`.
+
+If you train your own model, the weights will be saved automatically in the `models/` directory.
 
 
