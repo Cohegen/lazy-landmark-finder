@@ -39,7 +39,8 @@ lazy_landmark_finder/
 ```
 
 **Note:**
-- The `data/`, `dataset/`, `models/`, and `notebooks/` directories are not included in the repository due to size constraints. Please follow the instructions in the README to download or generate these files locally.
+- The `data/`, `dataset/`, `models/`, and `notebooks/` directories are not included in the repository due to size constraints. Please follow the instructions in the README to download or generate these files locally which is probably a good option
+- 
 
 ---
 
